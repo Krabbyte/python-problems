@@ -22,6 +22,9 @@ class TestFamilyAgeUtils(unittest.TestCase):
                          [('dog', 1),('cat', 2),('elliot', 3)])
         self.assertEqual(FamilyAgeUtils.sort_by_age({'cat': 2, 'dog': 1, 'rabbit': 2, 'elliot': 3}),
                          [('dog', 1),('cat', 2),('rabbit', 2),('elliot', 3)])
+    def test_closest_age(self):
+        self.assertEqual(FamilyAgeUtils.closest_age({'cat': 1, 'dog': 5, 'elliot': 10}, 7), ['dog'])
+        self.assertEqual(FamilyAgeUtils.closest_age({'cat': 1, 'dog': 5, 'fish': 5, 'elliot': 10}, 7), ['dog', 'fish'])
 
 
 if __name__ == '__main__':
