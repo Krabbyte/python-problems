@@ -116,7 +116,7 @@ class HiscoresScraper(object):
 
     def print_hiscores(self):
         print("Skill", "Rank", "Level", "EXP")
-        for k,v in self.hiscores.items():
+        for k, v in self.hiscores.items():
             print(k, v["rank"], v["level"], v["exp"])
 
     def json_file_hiscores(self):
@@ -129,8 +129,3 @@ class HiscoresScraper(object):
 
     def json_get_skill(self, chosen_skill):
         return json.dumps(self.hiscores[chosen_skill])
-
-
-Krabby = HiscoresScraper(name='krabby', game='osrs')
-Krabby.get_hiscores()
-Krabby.print_hiscores()
