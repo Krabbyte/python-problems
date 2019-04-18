@@ -129,8 +129,3 @@ class HiscoresScraper(object):
 
     def json_get_skill(self, chosen_skill):
         return json.dumps(self.hiscores[chosen_skill])
-
-
-Krabby = HiscoresScraper(name='krabby', game='osrs')
-Krabby.get_hiscores()
-Krabby.print_hiscores()
