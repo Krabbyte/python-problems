@@ -1,5 +1,5 @@
 import unittest
-from cash_register import Register
+from simple_problems.cash_register import Register
 
 
 class TestCashRegister(unittest.TestCase):

@@ -1,6 +1,6 @@
 # Making functions to mess with a dictionary of names to ages
 import unittest
-from family_age_utils import FamilyAgeUtils
+from simple_problems.family_age_utils import FamilyAgeUtils
 
 family = dict(Elliot=27, Oliver=23, Max=25, Ben=26, Simon=20, Mumsie=49, Phoebe=18, Fatherman=52)
 
